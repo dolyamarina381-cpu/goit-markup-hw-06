@@ -346,13 +346,6 @@ Hero section
     background-repeat: no-repeat;
 }
 
-@media (min-resolution: 192dpi) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-                          url("../images/people-office@2x.jpg");
-    }
-}
-
 .hero-container {
     display: flex;
     flex-direction: column;
@@ -1074,13 +1067,6 @@ Team section
                           url("../images/people-office.jpg");
     }
 
-    @media (min-resolution: 192dpi) {
-        .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-                              url("../images/people-office@2x.jpg");
-        }
-    }
-
     .hero-title {
         max-width: 496px;
         margin-bottom: 36px;
@@ -1194,13 +1180,6 @@ Team section
         height: 600px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
                           url("../images/people-office.jpg");
-    }
-
-    @media (min-resolution: 192dpi) {
-        .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-                              url("../images/people-office@2x.jpg");
-        }
     }
 
     .hero-title {
