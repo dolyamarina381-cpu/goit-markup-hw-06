@@ -51,8 +51,8 @@ Container
 
 .container {
     width: 100%;
-    max-width: 1158px;
-    padding: 0 15px;
+    max-width: 320px;
+    padding: 0 16px;
     margin: 0 auto;
 }
 
@@ -292,6 +292,38 @@ Mobile Menu
     color: #404bbf;
 }
 
+/* Mobile Social Links */
+.mobile-social-list {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+}
+
+.mobile-social-item {
+    width: 40px;
+    height: 40px;
+}
+
+.mobile-social-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-social-link:hover,
+.mobile-social-link:focus {
+    background-color: #404bbf;
+}
+
+.mobile-social-icon {
+    fill: #f4f4fd;
+}
+
 /* =====================
 Logo
 ==================== */
@@ -336,7 +368,7 @@ Hero section
     padding: 112px 0;
     background-color: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-                      url("../images/people-office.jpg");
+                      url("../images/people-office-mobile.jpg");
     max-width: 1440px;
     height: 432px;
     margin: auto;
@@ -344,6 +376,15 @@ Hero section
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* Retina display support for mobile */
+@media (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+                          url("../images/people-office-mobile@2x.jpg");
+    }
 }
 
 .hero-container {
@@ -423,6 +464,7 @@ Features section
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
 }
 
 .features-text {
@@ -460,6 +502,7 @@ Team section
 
 .team-card {
     width: 100%;
+    max-width: 264px;
     background-color: #ffffff;
     border-radius: 0 0 4px 4px;
     box-shadow:
@@ -998,6 +1041,7 @@ Team section
 @media (min-width: 768px) {
     .container {
         max-width: 768px;
+        padding: 0 16px;
     }
 
     .header-container {
@@ -1064,7 +1108,16 @@ Team section
         padding: 120px 0;
         height: 432px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-                          url("../images/people-office.jpg");
+                          url("../images/people-office-tablet.jpg");
+    }
+
+    /* Retina display support for tablet */
+    @media (min-resolution: 192dpi),
+           (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+                              url("../images/people-office-tablet@2x.jpg");
+        }
     }
 
     .hero-title {
@@ -1089,13 +1142,14 @@ Team section
     }
 
     .features-icon-box {
-        display: flex;
+        display: none;
     }
 
     .features-title {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
+        text-align: left;
     }
 
     .section-team {
@@ -1104,6 +1158,7 @@ Team section
 
     .team-card {
         width: calc((100% - 24px) / 2);
+        max-width: none;
     }
 
     .portfolio-list {
@@ -1158,6 +1213,7 @@ Team section
 @media (min-width: 1158px) {
     .container {
         max-width: 1158px;
+        padding: 0 15px;
     }
 
     .header-logo {
@@ -1179,7 +1235,16 @@ Team section
         padding: 188px 0;
         height: 600px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-                          url("../images/people-office.jpg");
+                          url("../images/people-office-desktop.jpg");
+    }
+
+    /* Retina display support for desktop */
+    @media (min-resolution: 192dpi),
+           (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+                              url("../images/people-office-desktop@2x.jpg");
+        }
     }
 
     .hero-title {
@@ -1197,6 +1262,10 @@ Team section
 
     .section-list li {
         width: calc((100% - 72px) / 4);
+    }
+
+    .features-icon-box {
+        display: flex;
     }
 
     .section-team {
