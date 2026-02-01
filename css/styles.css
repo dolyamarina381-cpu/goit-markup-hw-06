@@ -108,6 +108,11 @@ Header
     position: relative;
 }
 
+.header-logo {
+    margin-right: auto;
+    padding: 24px 0;
+}
+
 .nav-link.current::after {
     content: "";
     position: absolute;
@@ -498,6 +503,7 @@ Team section
     gap: 24px;
     justify-content: center;
     flex-wrap: wrap;
+    row-gap: 72px;
 }
 
 .team-card {
@@ -841,7 +847,7 @@ Team section
     left: 50%;
     transform: translate(-50%, -50%);
     width: 95%;
-    max-width: 408px;
+    max-width: 288px;
     min-height: 584px;
     background-color: #fcfcfc;
     border-radius: 4px;
@@ -1104,6 +1110,11 @@ Team section
         display: none;
     }
 
+    .modal {
+        width: 90%;
+        max-width: 408px;
+    }
+
     .hero {
         padding: 120px 0;
         height: 432px;
@@ -1162,7 +1173,7 @@ Team section
     }
 
     .portfolio-list {
-        row-gap: 48px;
+        row-gap: 72px;
         column-gap: 24px;
     }
 
@@ -1266,6 +1277,16 @@ Team section
 
     .features-icon-box {
         display: flex;
+    }
+
+    .features-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .features-text {
+        font-weight: 400;
     }
 
     .section-team {
