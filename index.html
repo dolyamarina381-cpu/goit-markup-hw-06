@@ -500,6 +500,44 @@
                 <li><a class="mobile-nav-link" href="#">Contacts</a></li>
             </ul>
         </nav>
+
+        <address class="mobile-contacts">
+            <ul class="mobile-contacts-list">
+                <li><a class="mobile-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                <li><a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+        </address>
+
+        <ul class="mobile-social-list">
+            <li class="mobile-social-item">
+                <a class="mobile-social-link" href="#" aria-label="Instagram">
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-social-item">
+                <a class="mobile-social-link" href="#" aria-label="Twitter">
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-social-item">
+                <a class="mobile-social-link" href="#" aria-label="Facebook">
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-social-item">
+                <a class="mobile-social-link" href="#" aria-label="LinkedIn">
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
     </div>
 </div>
 
@@ -521,7 +559,7 @@
                     <svg width="18" height="24" class="modal-icon">
                         <use href="./images/icons.svg#icon-user"></use>
                     </svg>
-                    <input type="text" class="modal-input" id="user-name" required />
+                    <input type="text" class="modal-input" id="user-name" name="user-name" required />
                 </div>
             </div>
 
@@ -531,7 +569,7 @@
                     <svg width="18" height="24" class="modal-icon">
                         <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
-                    <input type="tel" class="modal-input" id="user-phone" required />
+                    <input type="tel" class="modal-input" id="user-phone" name="user-phone" required />
                 </div>
             </div>
 
@@ -541,17 +579,17 @@
                     <svg width="18" height="24" class="modal-icon">
                         <use href="./images/icons.svg#icon-email"></use>
                     </svg>
-                    <input type="email" class="modal-input" id="user-email" required />
+                    <input type="email" class="modal-input" id="user-email" name="user-email" required />
                 </div>
             </div>
 
             <div class="modal-field">
                 <label for="user-comment" class="modal-label">Comment</label>
-                <textarea class="modal-textarea" id="user-comment" placeholder="Text input"></textarea>
+                <textarea class="modal-textarea" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
             </div>
 
             <div class="modal-checkbox-wrap">
-                <input type="checkbox" id="user-privacy" class="modal-check-input visually-hidden" required />
+                <input type="checkbox" id="user-privacy" name="user-privacy" class="modal-check-input visually-hidden" required />
                 <label for="user-privacy" class="modal-check-label">
                     <span class="modal-check-box">
                         <svg width="10" height="8" class="modal-check-icon">

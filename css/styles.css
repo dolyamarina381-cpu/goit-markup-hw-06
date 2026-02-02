@@ -854,7 +854,7 @@ Team section
     min-height: 584px;
     background-color: #fcfcfc;
     border-radius: 4px;
-    padding: 48px 16px 24px 16px;
+    padding: 72px 24px 24px 24px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -863,8 +863,8 @@ Team section
 /* close button */
 .modal-close-btn {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 24px;
+    right: 24px;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -911,7 +911,7 @@ Team section
 }
 
 .modal-field {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .modal-label {
