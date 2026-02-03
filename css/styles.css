@@ -247,6 +247,11 @@ Mobile Menu
     fill: #ffffff;
 }
 
+.mobile-menu-close:hover .mobile-menu-close-icon svg,
+.mobile-menu-close:focus .mobile-menu-close-icon svg {
+    fill: #ffffff;
+}
+
 .mobile-nav {
     margin-bottom: auto;
 }
@@ -927,6 +932,11 @@ Team section
 
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
+    fill: #ffffff;
+}
+
+.modal-close-btn:hover .modal-close-icon svg,
+.modal-close-btn:focus .modal-close-icon svg {
     fill: #ffffff;
 }
 
