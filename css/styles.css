@@ -1192,8 +1192,8 @@ Team section
 
     .section-list {
         display: flex;
-        gap: 24px;
         row-gap: 72px;
+        column-gap: 24px;
         flex-wrap: wrap;
     }
 
