@@ -404,23 +404,6 @@ Hero section
     }
 }
 
-/* Retina display support for tablet and desktop */
-@media (min-width: 768px) and (min-resolution: 192dpi),
-       (min-width: 768px) and (min-resolution: 2dppx) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-                          url("../images/people-office-tablet@2x.jpg");
-    }
-}
-
-@media (min-width: 1158px) and (min-resolution: 192dpi),
-       (min-width: 1158px) and (min-resolution: 2dppx) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-                          url("../images/people-office-desktop@2x.jpg");
-    }
-}
-
 .hero-container {
     display: flex;
     flex-direction: column;
@@ -1221,8 +1204,8 @@ Team section
     }
 
     .team-card {
-        width: calc((100% - 24px) / 2);
-        max-width: none;
+        width: 100%;
+        max-width: 264px;
     }
 
     .portfolio-list {
@@ -1270,6 +1253,15 @@ Team section
     }
 }
 
+/* Retina display support for tablet */
+@media (min-width: 768px) and (min-resolution: 192dpi),
+       (min-width: 768px) and (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+                          url("../images/people-office-tablet@2x.jpg");
+    }
+}
+
 /* =====================
   DESKTOP (1158px)
 ===================== */
@@ -1300,15 +1292,6 @@ Team section
         height: 600px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
                           url("../images/people-office-desktop.jpg");
-    }
-
-    /* Retina display support for desktop */
-    @media (min-resolution: 192dpi),
-           (min-resolution: 2dppx) {
-        .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-                              url("../images/people-office-desktop@2x.jpg");
-        }
     }
 
     .hero-title {
@@ -1394,5 +1377,14 @@ Team section
 
     .footer-subscribe-input {
         width: 264px;
+    }
+}
+
+/* Retina display support for desktop */
+@media (min-width: 1158px) and (min-resolution: 192dpi),
+       (min-width: 1158px) and (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+                          url("../images/people-office-desktop@2x.jpg");
     }
 }
